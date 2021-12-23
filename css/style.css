@@ -1,0 +1,976 @@
+/* Variables */
+:root {
+    --primary: #2472ED;
+    --secondary: #000000;
+    --yellow: #F2D02E;
+}
+
+/* reset */
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Noto Sans';
+}
+body,p,a,ul,li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container-fluid {
+    margin: 0px;
+    padding: 0px;
+}
+
+#brand-image {
+    width: 15rem;
+    margin-left: 5rem;
+}
+
+
+/* .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}    */
+
+/* base style */
+
+
+/* fonts */
+@font-face {
+    font-family: 'Noto Sans';
+    src:url(/assets/Noto_Sans/NotoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Catamaran';
+    src:url(/assets/Catamaran/static/Catamaran-Regular.ttf);
+}
+
+h1 {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+p {
+    color: var(--secondary);
+}
+
+/* Desktop Display */
+
+/* .container {
+    background: linear-gradient(180deg, #D9DDFD 0%, #FFFFFF 100%);
+} */
+
+
+/* Nav style start */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    /* background-color: rgb(35, 218, 19); */
+}
+
+.navbar {
+    
+    background-color: red;
+}
+
+.navbar-nav {
+    margin-left: 20rem;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+    margin-right: 1.7rem;
+}
+
+.logo {
+    width: 20rem;
+    margin: 0 2.5rem 0 6rem;
+}
+
+.nav-list {
+    display: flex;
+    width: 60%;
+
+}
+
+.nav-list a {
+    color: var(--secondary);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 2.5rem 0 2.5rem;
+}
+
+.burger {
+    display: none;
+    right: 0;
+}
+
+.burger div {
+    width: 2.5rem;
+    height: .3rem;
+    background-color: var(--primary);
+    margin: .5rem ;
+    transition:  all 0.3s ease;
+}
+
+/* Nav Style Ends  */
+
+
+/* Header Style Starts */
+
+/* .header {
+     height: 80vh;
+} */
+
+#header-image {
+    width: 65rem;
+    height: 40rem;
+    
+}
+
+.header-content {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* margin-left: 6rem; */
+}
+
+.header-text {
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin-left: 6rem;
+}
+
+.header-text h1 {
+    margin-top: 5rem;
+    font-family: Catamaran;
+    color:  #2472ED;;
+    font-size: 4.4rem;
+    line-height: 7.2rem;
+    letter-spacing: 0.023em;
+}
+
+.header-text p {
+    font-size: 2.2rem;
+    line-height: 4.0rem;
+}
+
+.header-text-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #9DC3FF; */
+    background-image:url(../img/yellow.png);
+    border-radius: 1.6rem;
+    width: 70%;
+    height: 145px;
+    margin: auto;
+}
+
+.header-text-box h2 {
+    font-family: Catamaran;
+    color: #003281;
+    font-size: 2.7rem;
+    
+}
+
+#header-button {
+    width: 20rem;
+    height: 5rem;
+    background: #2472ED;
+    border-radius: 5.0rem;
+    border: none;
+    position: absolute;
+    margin-left: 30rem;
+    margin-top: 5rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+    
+/* Header Style Ends */
+
+/* about-us Section */
+
+.about-us-content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 6rem;
+}
+
+.about-us-image {
+    width: 82rem;
+    position: absolute;
+    left: -10rem;
+    /* margin-top: 5rem; */
+}
+
+.about-us-heading {
+    font-size: 4.4rem ;
+}
+
+.about-us-text {
+    /* display: flex;
+    flex-direction: column; */
+    /* position: absolute; */
+    /* width: 50%; */
+    /* margin-left: 60rem; */
+    /* margin-right: 5rem; */
+    margin-top: 5rem;
+    font-size: 2rem;
+    width: 50%;
+}
+
+.about-us-content p {
+    font-size: 1.6rem;
+    line-height: 3.0rem;
+}
+
+.second-para {
+    margin-top: 2rem;
+}
+
+/* about-us End */
+
+/* what we do start */
+
+.what-we-do-content {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: space-between;
+    margin-left: 6rem;
+    margin-top: 5rem;
+}
+
+.what-we-do-image {
+    width: 70rem;
+    height: 55rem;
+    /* position: absolute; */
+    margin-top: 5rem;
+}
+
+.what-we-do-text {
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.what-we-do-text h1 {
+    margin-top: 5rem;
+    font-family: Catamaran;
+    color:  #2472ED;;
+    font-size: 4.4rem;
+    line-height: 7.2rem;
+    letter-spacing: 0.023em;
+
+}
+
+.what-we-do-text p {
+    font-size: 1.6rem;
+    line-height: 3.0rem;
+}
+
+/* what we do ends  */
+
+/* how it works */
+
+.how-it-works-section {
+    display: flex;
+}
+
+.how-it-works-content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 6rem;
+    margin-top: 5rem;
+}
+
+#how-it-works-image {
+    width: 57rem;
+    height: 60rem;
+    position: absolute;
+    margin-top: 5rem;
+    left: -1%;
+}
+
+.how-it-works-text {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* position: absolute; */
+    /* width: 50%; */
+    /* margin-left: 60rem; */
+    /* margin-right: 5rem; */
+    margin-top: 5rem;
+    font-size: 2rem;
+    width: 50%;
+}
+
+.how-it-works-text h1 {
+    margin-top: 5rem;
+    font-family: Catamaran;
+    color:  #2472ED;;
+    font-size: 4.4rem;
+    line-height: 7.2rem;
+    letter-spacing: 0.023em;
+}
+
+.how-it-works-text p {
+    font-size: 1.6rem;
+    line-height: 3.0rem;
+}
+
+.blockchain-circle {
+    position: relative;
+    width: 25.5rem;
+    height: 25rem;
+}
+
+#block-chain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17rem;
+}
+
+.blockchian-heading {
+    font-size: 3rem;
+}
+
+.block-chain-images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+.block-chain-section {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+
+
+.blockchain-top-img {
+    position: absolute;
+    width: 16.6rem;
+    height: 14.7rem;
+    z-index: 1;
+    margin-top: 5.5rem;
+    margin-left:4.5rem;
+
+}
+
+.blockchain-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.023em;
+}
+
+/* how it works end */
+
+/* contact section starts*/
+
+.contact-section {
+    height: 100vh;
+    /* margin-top: 7rem; */
+}
+
+.contact-heading {
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 7rem; */
+    font-family: Catamaran;
+    font-style: normal;
+    /* font-weight: bold; */
+    font-size: 40px;
+    /* line-height: 62px; */
+}
+
+form h2 {
+   font-family: Catamaran;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 3.6rem;
+   line-height: 6.2rem;
+   margin-left: 4rem;
+   color: #2472ED;
+   
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-img {
+    width: 45rem;
+    height: 45rem;
+    margin-left: 3rem;
+}
+
+.form-container {
+    width: 35rem;
+    background: #DAE8FF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 10px 15px 21px 2px rgba(0, 0, 0, 0.25);
+    border-radius: .9rem;
+}
+
+.contact-form {
+    height: 45rem;
+    margin-left: 2rem;
+}
+
+input, textarea {
+    /* width: 60%; */
+    margin-top: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+    background: #FFFFFF;
+    border: 1px solid #B7B7B7;
+    border-radius: 10px;
+    width: 30.1rem;
+    height: 4.0rem;
+}
+
+.submit {
+    border: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    background: #FFFFFF;
+    border: 1px solid #B7B7B7;
+    border-radius: 10px;
+    width: 30.1rem;
+    height: 4.0rem;
+}
+
+.submit:hover {
+    opacity: 0.6;
+}
+
+/* contact section  ends*/
+
+/* Footer start */
+
+#footer {
+    width: 100%;
+    height: 20rem;
+    background-color:  #2472ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer-text {
+    
+    margin-top: 3rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+
+#socials {
+    color: white; 
+    margin-right: 3rem;
+    align-items: center;
+}
+
+.footer-text {
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 62px;
+}
+
+#footer-span-text {
+    color: #FDD633;
+}
+
+/* Footer end */
+
+/* large tablet styles */
+@media screen and (max-width: 1200px){
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        /* background-color: aqua; */
+    }
+    
+    .logo {
+        width: 20rem;
+        margin-left: 2.5rem;
+    }
+    
+   
+     .nav-list  {
+        display: flex;
+        width: 70%;
+    
+    } 
+    
+    .nav-list a {
+        color: var(--secondary);
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: 0 2.5rem 0 2.5rem;
+    }
+
+    .about-us-heading {
+        font-size: 3.3rem;
+    }
+
+
+      #header-image {
+        width: 55rem;
+        height: 35rem;
+    }
+
+    .about-us-image {
+        width: 70rem;
+    }
+
+    .what-we-do-image {
+        width: 60rem;
+        height: 45rem;
+    }
+
+    #how-it-works-image {
+        width: 50rem;
+        height: 55rem;
+    }
+
+}
+
+/* Navbar media queries */
+
+@media screen and (max-width: 1024px) {
+    
+    .nav-links {
+        width: 65%;
+    }
+
+    .nav-links  {
+        
+        margin-right: .6rem;
+    }
+
+    .contact-section {
+        height: 60vh;
+    }
+
+    
+}
+
+/* medium desktops and large tablets */
+
+@media screen and (max-width: 1080px) {
+
+    .header-text p {
+        font-size: 1.7rem;
+        line-height: 4.0rem;
+    }
+
+    .header-text h1 {
+        font-size: 2.5rem;
+    }
+
+    #header-image {
+        /* height: 30rem; */
+    }
+
+    /* .about-us-image {
+        width: 60rem;
+    } */
+    .about-us-heading {
+        font-size: 3rem;
+    }
+
+    /* .about-us-content {
+        flex-direction: column;
+    } */
+
+    .about-us-text p {
+        font-size: 1.5rem;
+    }
+
+    .about-us-image {
+        width: 65rem;
+    }
+
+    /* .about-us-image {
+        position: relative;
+    } */
+
+    .what-we-do-text h1 {
+        font-size: 3rem;
+    }
+
+    /* .what-we-do-image {
+        height: 50rem;
+    } */
+
+    .what-we-do-image {
+        width: 55rem;
+        height: 40rem;
+    }
+
+    #how-it-works-image {
+        width: 50rem;
+        height: 55rem;
+    }
+
+    .how-it-works-text h1 {
+        font-size: 3rem;
+    }
+
+    .blockchian-heading {
+        font-size: 3rem;
+    }
+
+    .blockchian-heading br {
+        display: none;
+    }
+
+    /* .how-it-works-text {
+        margin-top: auto;
+    } */
+
+}
+
+@media screen and (max-width: 920px) {
+
+    .header-content {
+        flex-direction: column;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .header-text h1 {
+        text-align: center;
+    }
+
+    .header-text p {
+        text-align: center;
+    }
+
+    .header-image {
+        margin: auto;
+    }
+
+    #header-image {
+        width: 60rem;
+        height: 40rem;
+    }
+
+    .header-text-box h2 {
+        font-size: 1.7rem;
+    }
+
+    #header-button {
+        height: 4rem;
+        width: 12rem;
+        margin-left: 20rem;
+        font-size: 1.1rem;
+    }
+
+    .about-us-image {
+        position: relative;
+        left: auto;
+    }
+
+    .about-us-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .what-we-do-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .what-we-do-text {
+        width: 50%;
+    }
+
+    .how-it-works-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #how-it-works-image {
+        position: relative;
+    }
+
+    .how-it-works-text h1 {
+        line-height: 4rem;
+    }
+
+    .blockchian-heading {
+        font-size: 2.5rem;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .contact-img {
+        width: 35rem;
+        height: 35rem;
+        margin: auto;
+        /* margin-bottom: 10rem; */
+        margin-top: 20rem;
+    }
+
+    .contact-heading {
+        font-size: 2.5rem;
+    }
+
+    .form-container {
+         margin: auto;
+         margin-top: 7rem;
+    }
+
+    #footer {
+        margin-top: 55rem;
+    }
+
+
+}
+
+/* mobiles and small tablets */
+
+@media screen and (max-width: 768px) {
+
+    /* .nav-list  {
+        position: absolute;
+        right: 0px;
+        height: 100vh;
+        width: 100%;
+        top: 11vh;
+        background-color: aqua;
+        opacity: 6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translatex(100%);
+        transition: transform 0.5s ease-in;
+        overflow-x: hidden;
+
+    }
+
+    .nav-list li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-item {
+        margin-bottom: 7rem;
+    }
+
+    .nav-active {
+        transform: translatex(0);
+    }
+
+    @keyframes navLinkFade {
+        from { 
+            opacity: 0;
+            transform: translate(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line-1 {
+        transform: rotate(-45deg) translate(-.5rem, .6rem);
+    }
+    
+    .toggle .line-2 {
+        opacity: 0;
+    }
+    
+    .toggle .line-3 {
+        transform: rotate(45deg) translate(-.5rem, -.6rem);
+    } */
+
+    /* .contact-img {
+        width: 20rem;
+    } */
+
+    .form-container {
+         margin-top: 4rem;
+    }
+
+    .header-text {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .header-text h1 {
+        text-align: center;
+    }
+
+    .header-text-box h2 {
+        font-size: 1.2rem;
+    }
+
+    .header-text-box {
+        height: 115px;
+    }
+
+    .header-text p {
+        line-height: 3rem;
+        text-align: center;
+    }
+
+    #header-button {
+        height: 2.5rem;
+        font-size: .9rem;
+    }
+
+    .blockchian-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* .contact-img {
+        margin-top: 0px;
+    } */
+
+    /* #footer {
+        margin-top: 0rem;
+    } */
+
+    .how-it-works-content {
+        margin-left: 4rem;
+        margin-right: 4rem;
+        align-items: center;
+    }
+
+    .what-we-do-content {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .header-text p {
+        font-size: 1.5rem;
+    }
+
+    #header-image {
+        width: 35rem;
+        height: 25rem;
+    }
+
+    .header-text-box {
+        height: 115px;
+        width: 350px;
+    }
+
+    .about-us-content {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .about-us-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about-us-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-us-image {
+        width: 30rem;
+    }
+
+    .what-we-do-text h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .what-we-do-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .what-we-do-image {
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .how-it-works-text h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .how-it-works-text p {
+        text-align: center;
+    }
+
+    .how-it-works-text {
+        width: 100%;
+    }
+
+    #how-it-works-image {
+        width: 30rem;
+        height: 35rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    .footer-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+
+}
+
